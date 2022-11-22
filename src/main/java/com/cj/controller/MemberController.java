@@ -15,17 +15,5 @@ import com.cj.service.MemberService;
 @RequestMapping("/member/*")
 public class MemberController {
 
-	@Autowired
-	MemberService memberService;
-	
-	//member/list.do -> MemberService -> MemberDAO -> Mybatis(memberMapper) -> DB
-	//localhost:8093/member/list.do
-	@RequestMapping(value="list.do", method = RequestMethod.GET)
-	public String memberList(Model model) throws Exception {
-		List<MemberDTO> memberList = memberService.memberList();
-		model.addAttribute("memberList", memberList);
-		return "member/memberList";
-	}
-	//localhost:8093/member/getMember.do
-	//@RequestMapping("getMember.do)
+
 }
