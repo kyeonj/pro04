@@ -5,8 +5,8 @@ public class MemberDTO {
 	private String pw;
 	private String name;
 	private String addr;
-	private int tel;
-	private int regdate;
+	private String tel;
+	private String regdate;
 	private int pt;
 	public String getId() {
 		return id;
@@ -32,16 +32,16 @@ public class MemberDTO {
 	public void setAddr(String addr) {
 		this.addr = addr;
 	}
-	public int getTel() {
+	public String getTel() {
 		return tel;
 	}
-	public void setTel(int tel) {
+	public void setTel(String tel) {
 		this.tel = tel;
 	}
-	public int getRegdate() {
+	public String getRegdate() {
 		return regdate;
 	}
-	public void setRegdate(int regdate) {
+	public void setRegdate(String regdate) {
 		this.regdate = regdate;
 	}
 	public int getPt() {
