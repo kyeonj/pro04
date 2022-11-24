@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>회원목록</title>
+	<title>공지사항 목록</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 </head>
 <body>
@@ -54,26 +54,24 @@
     </div>
 
     <div class="row column text-center">
-      <h2>회원 목록</h2>
+      <h2>공지사항 목록</h2>
       <hr>
       <table>
       	<thead>
       		<tr>
       			<th width="80">No</th>
-      			<th width="100">ID</th>
-      			<th width="100">NAME</th>
-      			<th>RegDate</th>
-      			<th>Point</th>
+      			<th>Title</th>
+      			<th width="100">RegDate</th>
+      			<th width="100">Visited</th>
       		</tr>
       	</thead>
       	<tbody>
-      	<c:forEach items="${memberList }" var="mem" varStatus="status">
+      	<c:forEach items="${boardList }" var="board" varStatus="status">
       		<tr>
       			<td>${status.count }</td>
-      			<td>${mem.id }</td>
-      			<td>${mem.name }</td>
-      			<td>${mem.regdate }</td>
-      			<td>${mem.pt }</td>
+      			<td><a href="/board/detail.do?seq=${board.seq }">${board.title }</a></td>
+      			<td>${board.regdate }</td>
+      			<td>${board.visited }</td>
       		</tr>
       	</c:forEach>	
       	</tbody>
