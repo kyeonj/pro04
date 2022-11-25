@@ -1,12 +1,12 @@
 package com.cj.dto;
 
 public class MemberDTO {
-	private String id;
-	private String pw;
-	private String name;
-	private String addr;
-	private String tel;
-	private String regdate;
+	private String id; 
+	private String pw;  
+	private String name;  
+	private String addr; 
+	private String tel; 
+	private String regdate;         
 	private int pt;
 	public String getId() {
 		return id;
@@ -55,5 +55,4 @@ public class MemberDTO {
 		return "MemberDTO [id=" + id + ", pw=" + pw + ", name=" + name + ", addr=" + addr + ", tel=" + tel
 				+ ", regdate=" + regdate + ", pt=" + pt + "]";
 	}
-	
 }

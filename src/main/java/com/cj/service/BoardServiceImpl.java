@@ -23,6 +23,20 @@ public class BoardServiceImpl implements BoardService {
 	public BoardDTO boardDetail(int seq) throws Exception {
 		return boardDAO.boardDetail(seq);
 	}
-	
-	
+
+	@Override
+	public void boardInsert(BoardDTO dto) throws Exception {
+		boardDAO.boardInsert(dto);
+	}
+
+	@Override
+	public void boardDelete(int seq) throws Exception {
+		boardDAO.boardDelete(seq);
+	}
+
+	@Override
+	public void boardEdit(BoardDTO dto) throws Exception {
+		boardDAO.boardEdit(dto);
+	}
+
 }

@@ -3,7 +3,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<c:set var="path1" value="${pageContext.servletContext.contextPath }" />
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +16,7 @@
 </head>
 <body>
 	<h2>FORM 유효성 검사6</h2>
-	<form:form action="./check6" method="post" modelAttribute="member">
+	<form:form action="${path1 }/check/check6" method="post" modelAttribute="member">
 	    <form:input path="id"/>
 	    <form:errors path="id" element="div" delimiter=" "/>
 	

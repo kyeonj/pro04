@@ -14,17 +14,21 @@ import com.cj.service.MemberService;
 @Controller
 @RequestMapping("/member/*")
 public class MemberController {
-
+	
 	//의존성 주입
 	@Autowired
-	MemberService memberservice;
+	MemberService memberService;
 	
-	//member/list.do -> MemberService -> memberDAO -> MyBatis(memberMapper) -> DB
+	//member/list.do -> MemberService -> MemberDAO -> MyBatis(memberMapper) -> DB 
 	//localhost:8093/member/list.do
 	@RequestMapping(value="list.do", method = RequestMethod.GET)
 	public String memberList(Model model) throws Exception {
-		List<MemberDTO> memberList = memberservice.memberList();
+		List<MemberDTO> memberList = memberService.membetList();
 		model.addAttribute("memberList", memberList);
 		return "member/memberList";
 	}
+	
+	
+	//localhost:8093/member/getMember.do
+	//@RequestMapping("getMember.do")
 }
