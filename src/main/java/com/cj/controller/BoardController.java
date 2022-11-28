@@ -22,7 +22,7 @@ public class BoardController {
 	private BoardService boardService;
 	
 	@GetMapping("list.do")		//board/list.do
-	public String getBooardList(Model model) throws Exception {
+	public String getBoardList(Model model) throws Exception {
 		List<BoardDTO> boardList = boardService.boardList(); 
 		model.addAttribute("boardList", boardList);
 		return "board/boardList";

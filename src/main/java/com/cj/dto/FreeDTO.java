@@ -4,10 +4,11 @@ import lombok.Data;
 
 @Data
 public class FreeDTO {
-	private int seq;
+	private int bno;
 	private String title;
 	private String content;
-	private String nickname;
 	private String regdate;
 	private int visited;
+	private String id;
+	private int rec;
 }

@@ -21,6 +21,7 @@ public class BoardDAOImpl implements BoardDAO {
 
 	@Override
 	public BoardDTO boardDetail(int seq) throws Exception {
+		sqlSession.update("board.countUp", seq);
 		return sqlSession.selectOne("board.boardDetail", seq);
 	}
 

@@ -16,7 +16,7 @@ public class DTOtest {
 		dto.setPw("1234");
 		dto.setName("김기태");
 		dto.setTel("01020482048");
-		dto.setAddr("화정동");
+		dto.setAddr1("화정동");
 		dto.setPt(100);
 		dto.setRegdate("2022-11-21");
 		

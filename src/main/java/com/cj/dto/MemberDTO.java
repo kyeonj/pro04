@@ -3,11 +3,16 @@ package com.cj.dto;
 public class MemberDTO {
 	private String id; 
 	private String pw;  
-	private String name;  
-	private String addr; 
+	private String name;
+	private String email;
 	private String tel; 
-	private String regdate;         
+	private String addr1;
+	private String addr2;
+	private String postcode;
+	private String regdate;
+	private String birth;
 	private int pt;
+	private int visited;
 	public String getId() {
 		return id;
 	}
@@ -26,11 +31,30 @@ public class MemberDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getAddr() {
-		return addr;
+	public String getEmail() {
+		return email;
 	}
-	public void setAddr(String addr) {
-		this.addr = addr;
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getAddr1() {
+		return addr1;
+	}
+	public void setAddr1(String addr1) {
+		this.addr1 = addr1;
+	}
+	public String getAddr2() {
+		return addr2;
+	}
+	public void setAddr2(String addr2) {
+		this.addr2 = addr2;
+	}
+	
+	public String getPostcode() {
+		return postcode;
+	}
+	public void setPostcode(String postcode) {
+		this.postcode = postcode;
 	}
 	public String getTel() {
 		return tel;
@@ -44,15 +68,30 @@ public class MemberDTO {
 	public void setRegdate(String regdate) {
 		this.regdate = regdate;
 	}
+	
+	public String getBirth() {
+		return birth;
+	}
+	public void setBirth(String birth) {
+		this.birth = birth;
+	}
 	public int getPt() {
 		return pt;
 	}
 	public void setPt(int pt) {
 		this.pt = pt;
 	}
+	
+	public int getVisited() {
+		return visited;
+	}
+	public void setVisited(int visited) {
+		this.visited = visited;
+	}
 	@Override
 	public String toString() {
-		return "MemberDTO [id=" + id + ", pw=" + pw + ", name=" + name + ", addr=" + addr + ", tel=" + tel
-				+ ", regdate=" + regdate + ", pt=" + pt + "]";
+		return "MemberDTO [id=" + id + ", pw=" + pw + ", name=" + name + ", email=" + email + ", tel=" + tel
+				+ ", addr1=" + addr1 + ", addr2=" + addr2 + ", postcode=" + postcode + ", regdate=" + regdate
+				+ ", birth=" + birth + ", pt=" + pt + ", visited=" + visited + "]";
 	}
 }

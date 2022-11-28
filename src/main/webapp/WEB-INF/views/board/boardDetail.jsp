@@ -27,6 +27,7 @@
 	      <div class="container">
 		      <table id="table1">
 		      	<tbody>
+		
 		      		<tr>
 		      			<th style="background-color:#dcdcdc">글 번호</th>
 		      			<td>${dto.seq }</td>

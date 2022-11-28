@@ -30,7 +30,7 @@
 		      	<thead>
 		      		<tr>
 		      			<th width="80">No</th>
-		      			<th >Title</th>
+		      			<th>Title</th>
 		      			<th width="120">RegDate</th>
 		      			<th width="100">Visited</th>
 		      		</tr>
