@@ -9,6 +9,7 @@ alter table member rename column mempoint to pt;
 desc member;
 select * from board;
 drop table board;
+select * from qna;
 
 create table board(seq number primary key,
 title varchar2(100) not null,
@@ -36,7 +37,20 @@ id varchar2(20),    -- 작성자
 rec int -- 추천수
 );
 
-create table member(id varchar2(20) primary key,
+-- 질문 및 답변
+create table qna(no int primary key,    --글번호
+title varchar2(100) not null,   --글제목
+content varchar2(1500) not null,    --글내용
+regdate date,    --작성일
+visited int,    --조회수
+id varchar2(20),    --작성자
+lev int default 0,  --깊이
+parno int,  --부모글 번호
+sec char(1)); --비밀글 여부
+
+
+select* from free;
+create table mem(id varchar2(20) primary key,
 pw varchar2(300) not null,
 name varchar2(50),
 email varchar2(100) not null,
@@ -49,3 +63,8 @@ birth date,
 pt int default 100,
 visited int default 0
 );
+alter table member rename to membera;
+select * from member;
+alter table mem rename to member;
+
+commit;

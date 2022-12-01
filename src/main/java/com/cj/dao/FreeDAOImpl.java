@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.cj.dto.FreeDTO;
 
@@ -19,8 +20,10 @@ public class FreeDAOImpl implements FreeDAO {
 		return sqlSession.selectList("free.freeList");
 	}
 
+	@Transactional
 	@Override
 	public FreeDTO freeDetail(int bno) throws Exception {
+		sqlSession.update("free.visitCount", bno);
 		return sqlSession.selectOne("free.freeDetail", bno);
 	}
 

@@ -16,7 +16,7 @@
 </head>
 <body>
 	<h2>FORM 유효성 검사6</h2>
-	<form:form action="${path1 }/check/check6" method="post" modelAttribute="member">
+	<form:form action="${path1 }/check/check6.do" method="post" modelAttribute="memberVO">
 	    <form:input path="id"/>
 	    <form:errors path="id" element="div" delimiter=" "/>
 	

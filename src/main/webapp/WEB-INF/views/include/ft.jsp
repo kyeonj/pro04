@@ -7,7 +7,7 @@
 <!-- 푸터 내용 기술 -->
 <article class="ft_wrap">
 	<div class="footer-nav-left">
-	  <p class="footer-copyright">©2020 Foundation Yetinauts</p>
+	  <p class="footer-copyright">©2022 Company WebApplication</p>
 	</div>
 	<div class="footer-nav-center">
 	  <ul class="footer-nav-menu">

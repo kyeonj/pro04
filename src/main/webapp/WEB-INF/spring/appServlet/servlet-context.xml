@@ -31,11 +31,11 @@
 	<!-- 리졸버에 대한 접두사와 접미사 설정 -->
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<beans:property name="prefix" value="/WEB-INF/views/" />
-		<beans:property name="suffix" value=".jsp" />
+		<beans:property name="prefix" value="/WEB-INF/views/" />	<!-- 접두사 -->
+		<beans:property name="suffix" value=".jsp" />				<!-- 접미사 -->
 	</beans:bean>
 	
-	<!-- 멀티파트 리졸버 설정 -->
+	<!-- 멀티파트 리졸버 설정 controller에서 진행할내용-->
 	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<beans:property name="maxUploadSize" value="10485760" /> <!-- 10mb 제한 -->
 	</beans:bean>
@@ -49,9 +49,27 @@
 	<context:component-scan base-package="com.cj" />
 	
 	<!-- 인터셉터 : 글쓰기와 같은 회원권한을 가진 경우는 반드시 로그인 페이지를 거쳐서 시도할 것  -->
-	<beans:bean id="sampleInterceptor" class="com.cj.util."></beans:bean>
-	<beans:bean id="loginInterceptor" class="com.cj.util.LoginCheckInterceptor" /> 
+	<beans:bean id="sampleInterceptor" class="com.cj.util.SampleInterceptor" />
+	<beans:bean id="loginInterceptor" class="com.cj.util.LoginCheckInterceptor" />
+	<beans:bean id="adminInterceptor" class="com.cj.util.AdminInterceptor" />
+	<interceptors>
+		<interceptor>
+            <mapping path="/free/**" />
+            <beans:ref bean="sampleInterceptor" />
+        </interceptor>
+        <interceptor>
+            <mapping path="/free/write.do" />
+            <mapping path="/free/insert.do" />
+            <mapping path="/free/update.do" />
+            <mapping path="/free/delete.do" />
+            <beans:ref bean="loginInterceptor"/>
+        </interceptor>
+        <interceptor>
+            <mapping path="/board/insert.do"/>
+            <mapping path="/board/update.do"/>
+            <beans:ref bean="adminInterceptor" />
+        </interceptor>
+	</interceptors>
 	
-	<!-- 트랜잭션 및 DB 패키지 방안 및 각 종 로깅과 보안 설정 -->
 	
 </beans:beans>

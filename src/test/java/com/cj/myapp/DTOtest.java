@@ -6,11 +6,11 @@ import org.slf4j.LoggerFactory;
 
 import com.cj.dto.MemberDTO;
 
-public class DTOtest {
-	private static final Logger Logger = LoggerFactory.getLogger(DTOtest.class);
+public class DTOTest {
+	private static final Logger logger = LoggerFactory.getLogger(DTOTest.class);
 	
 	@Test
-	public void testLombok() {
+	public void testDto() {
 		MemberDTO dto = new MemberDTO();
 		dto.setId("kkt");
 		dto.setPw("1234");
@@ -20,7 +20,6 @@ public class DTOtest {
 		dto.setPt(100);
 		dto.setRegdate("2022-11-21");
 		
-		Logger.info(dto.toString());
+		logger.info(dto.toString());
 	}
-
 }

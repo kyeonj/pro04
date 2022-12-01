@@ -150,6 +150,7 @@ public class MemberController {
 			logger.info("로그인 성공");
 			session.setAttribute("member", member);
 			session.setAttribute("sid", member.getId());
+			rttr.addFlashAttribute("msg", "로그인 성공");
 			return "redirect:/";
 		} else {
 			logger.info("로그인 실패");

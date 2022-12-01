@@ -3,13 +3,15 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
+<%@ page import="java.util.*, java.lang.*" %>
+<%@ page import="java.text.*, java.net.InetAddress" %>
 <c:set var="path1" value="${pageContext.request.contextPath }" />
 <!-- 헤더 내용 기술 -->
 <nav class="top-bar">
    <div class="top-bar-left" id="gnb">
    	 <!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
      <ul class="dropdown menu" data-dropdown-menu>
-       <li class="menu-text"><a href="/" class="logo">CJ</a></li>
+       <li class="menu-text"><a href="/" class="logo">LG</a></li>
        <li><a href="#">Company</a></li>
        <li><a href="#">Product</a></li>
        <li><a href="#">Service</a></li>
