@@ -29,14 +29,12 @@
       <div class="grid-x grid-margin-x">
     
         <div class="medium-7 large-6 cell">
-          <h1>Close Your Eyes and Open Your Mind</h1>
-          <p class="subheader">There is beauty in space, and it is orderly. There is no weather, and there is regularity. It is predictable. Everything in space obeys the laws of physics. If you know these laws, and obey them, space will treat you kindly.</p>
-          <button class="button">Take a Tour</button>
-          <button class="button">Start a free trial</button>
+          <h1>비비고 특설렁탕 600g</h1>
+          <p class="subheader">추운날 따끈한 국물 어떠세요?</p>
         </div>
     
         <div class="show-for-large large-3 cell">
-          <img src="https://placeimg.com/400/370/people" alt="picture of space">
+          <img src="./resources/icon/pro_nf1.jpg" alt="picture of space">
         </div>
     
         <div class="medium-5 large-3 cell">
@@ -107,56 +105,44 @@
     </div>
     
     <div class="">
-      <p class="lead">Trending Planetary Destinations</p>
+      <p class="lead">Best!</p>
     </div>
     
     <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
       <div class="cell">
         <div class="callout">
-          <p>Pegasi B</p>
-          <p class="pic"><img src="https://placeimg.com/400/370/any" alt="image of a planet called Pegasi B"></p>
-          <p class="lead">Copernican Revolution caused an uproar</p>
-          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <p>비비고 남도떡갈비 450g</p>
+          <p class="pic"><img src="./resources/icon/con1.jpg" alt="image of a planet called Pegasi B"></p>
         </div>
       </div>
       <div class="cell">
         <div class="callout">
-          <p>Pegasi B</p>
-          <p class="pic"><img src="https://placeimg.com/400/370/animals" alt="image of a planet called Pegasi B"></p>
-          <p class="lead">Copernican Revolution caused an uproar</p>
-          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <p>고메 바삭쫄깃한 탕수육 450g</p>
+          <p class="pic"><img src="./resources/icon/con2.jpg" alt="image of a planet called Pegasi B"></p>
         </div>
       </div>
       <div class="cell">
         <div class="callout">
-          <p>Pegasi B</p>
-          <p class="pic"><img src="https://placeimg.com/400/370/nature" alt="image of a planet called Pegasi B"></p>
-          <p class="lead">Copernican Revolution caused an uproar</p>
-          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <p>비비고 왕교자 1.05kgX2개</p>
+          <p class="pic"><img src="./resources/icon/con3.jpg" alt="image of a planet called Pegasi B"></p>
         </div>
       </div>
       <div class="cell">
         <div class="callout">
-          <p>Pegasi B</p>
-          <p class="pic"><img src="https://placeimg.com/400/370/tech" alt="image of a planet called Pegasi B"></p>
-          <p class="lead">Copernican Revolution caused an uproar</p>
-          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <p>비비고 갈비탕 400g</p>
+          <p class="pic"><img src="./resources/icon/con4.jpg" alt="image of a planet called Pegasi B"></p>
         </div>
       </div>
       <div class="cell">
         <div class="callout">
-          <p>Pegasi B</p>
-          <p class="pic"><img src="https://placeimg.com/400/370/arch" alt="image of a planet called Pegasi B"></p>
-          <p class="lead">Copernican Revolution caused an uproar</p>
-          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <p>고메 중화짬뽕 652g</p>
+          <p class="pic"><img src="./resources/icon/con5.jpg" alt="image of a planet called Pegasi B"></p>
         </div>
       </div>
       <div class="cell">
         <div class="callout">
-          <p>Pegasi B</p>
-          <p class="pic"><img src="https://placeimg.com/400/370/people" alt="image of a planet called Pegasi B"></p>
-          <p class="lead">Copernican Revolution caused an uproar</p>
-          <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+          <p>고메 바삭튀겨낸통등심돈카츠450g</p>
+          <p class="pic"><img src="./resources/icon/con6.jpg" alt="image of a planet called Pegasi B"></p>
         </div>
       </div>
     

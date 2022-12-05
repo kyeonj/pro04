@@ -11,7 +11,7 @@
    <div class="top-bar-left" id="gnb">
    	 <!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
      <ul class="dropdown menu" data-dropdown-menu>
-       <li class="menu-text"><a href="/" class="logo">LG</a></li>
+       <li class="menu-text"><a href="/" class="logo">CJ더마켓</a></li>
        <li><a href="#">Company</a></li>
        <li><a href="#">Product</a></li>
        <li><a href="#">Service</a></li>
@@ -51,22 +51,28 @@
         <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
         <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
         <li class="orbit-slide is-active">
-          <img src="https://placeimg.com/2000/750/any" alt="더미이미지">
+          <img src="../resources/icon/main1.jpg" alt="더미이미지">
         </li>
         <li class="orbit-slide">
-          <img src="https://placeimg.com/2000/750/animals" alt="더미이미지">
+          <img src="../resources/icon/main2.jpg" alt="더미이미지">
         </li>
         <li class="orbit-slide">
-          <img src="https://placeimg.com/2000/750/nature" alt="더미이미지">
+          <img src="../resources/icon/main3.jpg" alt="더미이미지">
         </li>
         <li class="orbit-slide">
-          <img src="https://placeimg.com/2000/750/tech" alt="더미이미지">
+          <img src="../resources/icon/main4.jpg" alt="더미이미지">
         </li>
         <li class="orbit-slide">
-          <img src="https://placeimg.com/2000/750/arch" alt="더미이미지">
+          <img src="../resources/icon/main5.jpg" alt="더미이미지">
         </li>
         <li class="orbit-slide">
-          <img src="https://placeimg.com/2000/750/people" alt="더미이미지">
+          <img src="../resources/icon/main6.jpg" alt="더미이미지">
+        </li>
+        <li class="orbit-slide">
+          <img src="../resources/icon/main7.jpg" alt="더미이미지">
+        </li>
+        <li class="orbit-slide">
+          <img src="../resources/icon/main8.jpg" alt="더미이미지">
         </li>
       </ul>
     </div>
