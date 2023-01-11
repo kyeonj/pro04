@@ -5,20 +5,14 @@
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
 <c:set var="path3" value="${pageContext.request.contextPath }" />
 <!-- 푸터 내용 기술 -->
-<article class="ft_wrap">
-	<div class="footer-nav-left">
+<article class="ft_wrap" >
+	<div class="footer-nav-left" >
 	  <p class="footer-copyright">©2022 Company WebApplication</p>
 	</div>
 	<div class="footer-nav-center">
-	  <ul class="footer-nav-menu">
-	    <li class="footer-nav-item">
-	      <a href="https://get.foundation/develop/getting-started.html">Building Blocks</a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://get.foundation/get-involved/support.html">Get Involved</a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://get.foundation/sites/docs/">Docs</a>
+	  <ul class="footer-nav-menu" style="color: #fff">
+	    <li class="footer-nav-item" >
+	      <p>씨제이 제일제당(주)</p>
 	    </li>
 	  </ul>
 	</div>

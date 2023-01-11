@@ -67,7 +67,7 @@
 									<input type="text" name="addr1" id="addr1" class="single100" value="${member.addr1 }"><br>
 									<input type="text" name="addr2" id="addr2" class="single100" value="${member.addr2 }"><br>
 									<input type="text" name="postcode" id="postcode"  class="single40" value="${member.postcode }">
-									<input type="button" value="주소찾기" onclick="findAddr()" class="btn btn-primary">
+									<input type="button" id="isAddrBtn" class="button" value="주소 입력" onclick="findAddr()">
 								</td>
 							</tr>
 							<tr>

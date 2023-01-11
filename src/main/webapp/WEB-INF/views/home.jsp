@@ -41,7 +41,7 @@
           <div class="callout secondary">
 			<c:if test="${!empty msg }">
 			<script>
-			alert("로그인 실패");
+			alert("로그인 성공");
 			document.loginForm.userid.focus();
 			</script>
 			</c:if>

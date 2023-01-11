@@ -27,7 +27,7 @@
 			<h2 class="page_tit">회원 정보 수정</h2>
 			</c:if>
 			<c:if test="${sid!='admin' }">
-			<h2 class="page_tit">마이 페이지</h2>
+			<h2 class="page_tit">회원 정보 수정</h2>
 			</c:if>
 	      	<hr>
 				<form action="${path1 }/member/update.do" method="post" onsubmit="return updateCheck(this)">

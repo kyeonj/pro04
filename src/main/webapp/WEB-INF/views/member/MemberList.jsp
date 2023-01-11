@@ -19,10 +19,11 @@
 		<!-- 헤더 부분 인클루드 -->
 	 	<jsp:include page="../include/hd.jsp"></jsp:include>
     </header>
-
+<div class="content" id="content">
     <div class="row column text-center">
       <h2 class="h1">회원 목록</h2>
       <hr>
+      <div class="container">
       <table>
       	<thead>
       		<tr>
@@ -46,8 +47,9 @@
       	</tbody>
       </table>
     </div>
-	
-    <footer id="footer" class="footer-nav">
+	</div>
+	</div>
+    <footer id="footer" class="footer-nav row expanded collapse">
     	<!-- 푸터 부분 인클루드 -->
     	<jsp:include page="../include/ft.jsp"></jsp:include>
     </footer>
