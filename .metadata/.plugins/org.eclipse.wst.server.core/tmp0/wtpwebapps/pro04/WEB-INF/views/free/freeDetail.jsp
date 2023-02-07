@@ -56,7 +56,7 @@
 		      </table>
 				<div class="button-group">
 				  <a class="button" href="${path1 }/free/list.do">글 목록</a>
-				  <c:if test='${sid eq "admin"}'>
+				  <c:if test='${sid == sid}'>
 				  <a class="button" href="${path1 }/free/delete.do?bno=${dto.bno}">글 삭제</a>
 				  <a class="button" href="${path1 }/free/edit.do?bno=${dto.bno}">글 수정</a>
 				  </c:if>
