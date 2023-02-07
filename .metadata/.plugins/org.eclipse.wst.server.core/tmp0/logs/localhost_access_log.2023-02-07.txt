@@ -100,3 +100,16 @@
 0:0:0:0:0:0:0:1 - - [07/Feb/2023:11:48:17 +0900] "GET /free/detail.do?bno=3 HTTP/1.1" 200 9233
 0:0:0:0:0:0:0:1 - - [07/Feb/2023:11:48:17 +0900] "GET /free/resources/css/normalize.css HTTP/1.1" 404 721
 0:0:0:0:0:0:0:1 - - [07/Feb/2023:11:48:17 +0900] "GET /free/ckImgSubmit.do?uid=f3271eee-a34d-45ef-be53-6d5b0f4d78ad&fileName=con1_5.png HTTP/1.1" 200 34787
+127.0.0.1 - - [07/Feb/2023:16:55:14 +0900] "GET / HTTP/1.1" 200 11029
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:55:22 +0900] "GET / HTTP/1.1" 200 11029
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:55:23 +0900] "GET /favicon.ico HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:55:28 +0900] "POST /member/loginCheck.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:55:28 +0900] "GET / HTTP/1.1" 200 11067
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:55:31 +0900] "GET /member/read.do HTTP/1.1" 200 11779
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:55:31 +0900] "GET /member/resources/css/normalize.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:57:27 +0900] "GET /member/read.do HTTP/1.1" 200 11779
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:57:27 +0900] "GET /member/resources/css/normalize.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:57:31 +0900] "GET /member/list.do HTTP/1.1" 200 8623
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:57:31 +0900] "GET /member/resources/css/normalize.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:58:50 +0900] "GET /free/list.do HTTP/1.1" 200 9283
+0:0:0:0:0:0:0:1 - - [07/Feb/2023:16:58:50 +0900] "GET /free/resources/css/normalize.css HTTP/1.1" 404 721
